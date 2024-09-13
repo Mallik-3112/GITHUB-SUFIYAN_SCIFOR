@@ -19,9 +19,8 @@ formatting of a web page.HTML consists of various elements, that are responsible
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<title>Test-1<\title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test-1</title>
 </head>
 <body>
 <h1>Hello!</h1>
