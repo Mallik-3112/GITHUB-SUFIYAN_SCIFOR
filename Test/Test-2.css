@@ -1,0 +1,23 @@
+body{
+    font-family: 'Lucida Sans';
+    background-color: bisque;
+    text-align: center;
+    line-height: 60px;
+}
+#head-1{
+    color: red;
+}
+#head-2{
+    color: green;
+}
+#head-3{
+    color: brown;
+}
+#div{
+    color: blue;
+    font-size: 30px;
+}
+#para{
+    color: goldenrod;
+    font-weight: bolder;
+}
