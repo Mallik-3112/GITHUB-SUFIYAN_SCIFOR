@@ -1,0 +1,22 @@
+/*Group select*/
+h1, h2, h3, div, p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:blanchedalmond;
+}
+/*ID select*/
+#divTag{
+    color:blue;
+    font-style: italic;
+    font-size: larger;
+}
+/*class select*/
+.para{
+    font-size: x-large;
+    color: yellowgreen;
+}
+/*Tag select*/
+h3{
+    font-family: Verdana;
+    color: brown;
+}
