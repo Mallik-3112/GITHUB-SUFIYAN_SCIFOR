@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From-required task</title>
+    <style>
+        form{
+            background-color: blanchedalmond;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="UserName">User Name:</label>
+            <input type="text" id="Uname" required>
+        </div>
+        <div>
+            <label for="Lastname">Last Name:</label>
+            <input type="text" id="Lname" required>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" id="pass" minlength="8" maxlength="20" required>
+        </div>
+        <div>
+            <input type="submit" value="Sign up">
+        </div>
+    </form>
+</body>
+</html>
