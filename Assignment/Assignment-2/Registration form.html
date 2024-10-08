@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form test-4</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:burlywood;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color:bisque;
+            height: 60vh;
+            width: 30vw;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div{
+            padding: 17px;
+            font-size: larger;
+        }
+        h2{
+            padding-top: 10px;
+        }
+        #email:valid{
+            border-color: green;
+        }
+        #email:invalid{
+            border-color: red;
+        }
+        input{
+            outline: none;
+            height: 1.7rem;
+            width: 17em;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Registration Form</h2>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="Uname" minlength="4" maxlength="10" name="username" required>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" min="18" max="100" required>
+        </div>
+        <div>
+            <label for="Zip code">Zip Code:</label>
+            <input type="number" id="zipcode" pattern="\d{5}" required>
+        </div>
+        <div>
+            <input type="submit" value="Sign up">
+        </div>
+    </form>
+</body>
+</html>
