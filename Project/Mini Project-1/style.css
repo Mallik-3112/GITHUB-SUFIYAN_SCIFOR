@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 64px;
+    width: 100%;
+    border-bottom: 0.5px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    display: flex;
+    position: absolute;
+    left: 25px;
+    gap: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.nav-logo{
+    background-image: url(Bata\ logo.png);
+    height: 50px;
+    width: 125px;
+}
+.search-bar{
+    display: flex;
+    position: absolute;
+    right: 200px;
+}
+input{
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 185px;
+    background-color: #F2F2EE80;
+    color: #140000;
+    padding: 4px 8px;
+    font-size: 15px;
+}
+.search-icon{
+    height: 33px;
+    width: 24px;
+    background-color: #F2F2EE80;
+    font-size: 1.4rem;
+    padding: 7px 2px 0px 10px;
+    margin-right: 0;
+}
+.nav-right{
+    position: absolute;
+    right: 35px;
+}
+.nav-right i{
+    font-size: 18px;
+    padding-left: 24px;
+    cursor: pointer;
+}
+.nav-right i:hover{
+    color: red;
+}
+
+.select-section{
+    padding: 0px 24px;
+}
+.select-section p{
+    padding: 10px 0px 12px;
+    font-size: 16px;
+    color: red;
+}
+.select-section h1{
+    padding: 24px 0px 15px;
+}
+.choose{
+    display: flex;
+    gap: 10px;
+    padding: 13px 0px 15px;
+    font-size: 16px;   
+}
+.choose .select{
+    border: 1px solid gray;
+    padding: 8px 16px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.choose .select:hover{
+    color: red;
+}
+.choose .select:active{
+    border: 2px solid black;
+    font-weight: bolder;
+}
+.select-type{
+    padding: 26px 0px 12px;
+}
+.select-type select{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    padding-left: 20px;
+}
+.select-type select:hover{
+    color: red;
+}
+#color{
+    width: 85px;
+}
+#brand{
+    width: 90px;
+}
+#discount{
+    width: 108px;
+}
+#sort{
+    position: absolute;
+    right: 40px;
+    width: 195px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 30px;
+    flex-wrap: wrap;
+}
+.shoe-1{
+    background-color: #f4f4f4;
+    height: 480px;
+    width: 335px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.shoe-1 h5{
+    text-decoration: underline;
+    padding: 12px 0px 0px 12px;
+}
+#fav{
+    position: relative;
+    left: 300px;
+    top: -15px;
+}
+#fav:hover{
+    color: red;
+}
+.shoe-1 img{
+    height: 340px;
+    width: 330px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.shoe-1 img:hover{
+    transform: scale(1.1);
+}
+.product-info{
+    padding: 16px 16px 60px;
+}
+.name{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 0px 5px;
+    cursor: pointer;
+}
+.price{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.color{
+    font-size: 13px;
+}
+
+.show-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+}
+.show-more p{
+    color: #756E65;
+    font-size: 15px;
+    padding: 0px 0px 16px;
+}
+.more-box{
+    text-align: center;
+    width: 100px;
+    font-size: 12px;
+    border: 2px solid #140000;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.new{
+    background-color: #F2F2EE;
+    width: 100%;
+    height: 350px;
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.new div{
+    width: 90%;
+}
+.new h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+.new p{
+    font-size: 1rem;
+    padding-bottom: 18px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+}
+.left-foot{
+    padding: 48px 48px 15px;
+}
+.left-foot h1{
+    color: red;
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.1em;
+    margin: 0px 0px 32px;
+}
+.left-foot p{
+    font-size: 15px;
+}
+.left-foot button{
+    padding: 15px 24px;
+    background-color: red;
+    border: none;
+    outline: none;
+    margin: 24px 0px 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right-foot{
+    padding: 48px 48px 64px;
+    display: flex;
+}
+.right-foot span{
+    font-size: 12px;
+    color: #756E65;
+    padding: 0px 0px 28px;
+}
+.collum{
+    padding: 0px 25px 0px 20px;
+}
+.collum ul{
+    font-size: 15px;
+    list-style-type: none;
+}
+.collum li{
+    padding: 24px 0px 0px;
+    cursor: pointer;
+}
+.collum li:hover{
+    color: red;
+}
+.left-bottem{
+    display: flex;
+    padding: 68px 0px 0px;
+}
+.location{
+    display: flex;
+    padding: 50px 20px 0px 0px;
+    cursor: pointer;
+}
+.location:hover{
+    color: red;
+}
+.location p{
+    margin-left: 5px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.lang{
+    display: flex;
+    padding: 50px 20px 0px 0px;
+    cursor: pointer;
+}
+.lang:hover{
+    color: red;
+}
+.lang p{
+    margin-left: 5px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.right-bottum{
+    display: flex;
+    position: absolute;
+    right: 64px;
+    gap: 35px;
+    margin-top: 44px;
+}
+.right-bottum i{
+    font-size: 1.3em;
+}
+
+.last-line{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+
