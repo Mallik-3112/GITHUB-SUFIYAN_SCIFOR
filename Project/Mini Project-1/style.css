@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
     border: border-box;
 }
@@ -34,7 +35,7 @@ input{
     border: none;
     outline: none;
     height: 32px;
-    width: 185px;
+    width: 186px;
     background-color: #F2F2EE80;
     color: #140000;
     padding: 4px 8px;
@@ -42,10 +43,10 @@ input{
 }
 .search-icon{
     height: 33px;
-    width: 24px;
+    width: 32px;
     background-color: #F2F2EE80;
     font-size: 1.4rem;
-    padding: 7px 2px 0px 10px;
+    padding: 4px 2px 0px 7px;
     margin-right: 0;
 }
 .nav-right{
@@ -183,7 +184,7 @@ input{
 }
 .more-box{
     text-align: center;
-    width: 100px;
+    width: 140px;
     font-size: 12px;
     border: 2px solid #140000;
     padding: 12px 20px;
@@ -309,6 +310,85 @@ footer{
     text-align: center;
     padding: 20px 0px;
     font-size: 12px;
+}
+.menu{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .section{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 20px;
+        font-size: 20px;
+    }
+    .nav-logo{
+        margin-right: 10rem;
+    }
+    .search-bar{
+        margin-right: 25px;
+    }
+    .nav-right{
+        margin-right: 40px;
+        padding-right: 20px;
+    }
+    .shoe-1{
+        height: 499px;
+        width: 499px;
+        text-align: center;
+    }
+    .shoe-1 h5{
+        text-align: left;
+    }
+    .shoe-1 img{
+        height: 360px;
+        width: 360px;
+    }
+    .shoe-1 .product-info{
+        text-align: left;
+    }
+    .new{
+        padding: 45px 10px;
+        height: 390px;
+        width: 100%;
+    }
+    .new h2{
+        font-size: 28px;
+    }
+    .new p{
+        font-size: 13px;
+        margin-right: 25px;
+    }
+    .left-foot{
+        padding: 30px 20px;
+    }
+    .right-bottum{
+        padding: 25px 25px;
+    }
+    .left-foot h1{
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 1em;
+        margin: 0px 0px 30px;
+    }
+    .right-foot{
+        padding: 35px 30px 50px;
+        margin-right: 20px;
+    }
+    .collum{
+        padding: 0px 15px 0px 15px;
+    }
+    .collum li{
+        padding: 22px 0px 0px;
+        font-size: 13px;
+    }
+    .lang, .location{
+        padding: 72px 20px 0px 0px;
+    }
 }
 
 
