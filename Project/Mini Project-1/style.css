@@ -315,6 +315,7 @@ footer{
     display: none;
 }
 
+/* media querty */
 @media (max-width: 1200px){
     .section{
         display: none;
@@ -390,5 +391,3 @@ footer{
         padding: 72px 20px 0px 0px;
     }
 }
-
-
