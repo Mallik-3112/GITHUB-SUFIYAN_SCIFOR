@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form with Validation</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+     <style>
+         body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+             background-color: wheat;
+             font-family: Arial, sans-serif;
+             color: black;
+             line-height: 1.5;
+             font-weight: 400;
+             transition: background-color 0.3s ease-in-out;
+             overflow-x: hidden;
+             overflow-y: auto;
+         }
+         
+         .grid-container {
+             max-width: 500px;
+             padding: 2rem;
+             background-color: #fff;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             border-radius: 8px;
+             transition: background-color 0.3s ease-in-out;
+             overflow-x: auto;
+             overflow-y: auto;
+         }
+ 
+         .form-error {
+             color: red;
+             font-size: 0.85em;
+             display: none;
+             margin-top: 0.5rem;
+             margin-bottom: 0.5rem;
+             margin-left: 0;
+             margin-right: 0;
+         }
+         
+         .form-error.is-visible {
+             display: block;
+             margin-top: 0.5rem;
+             margin-bottom: 0.5rem;
+             margin-left: 0;
+             margin-right: 0;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="grid-container">
+         <form id="myForm" data-abide novalidate>
+             <div class="grid-x grid-padding-x">
+                 <div class="medium-12 cell">
+                     <label>First Name
+                         <input type="text" id="fname" name="fname" required pattern="alpha">
+                         <span class="form-error">Please enter a valid first name.</span>
+                     </label>
+                 </div>
+                 <div class="medium-12 cell">
+                     <label>Last Name
+                         <input type="text" id="lname" name="lname" required pattern="alpha">
+                         <span class="form-error">Please enter a valid last name.</span>
+                     </label>
+                 </div>
+                 <div class="medium-12 cell">
+                     <label>Email
+                         <input type="email" id="email" name="email" required>
+                         <span class="form-error">Please enter a valid email address.</span>
+                     </label>
+                 </div>
+                 <div class="medium-12 cell">
+                     <label>Password
+                         <input type="password" id="password" name="password" required pattern=".{8,}">
+                         <span class="form-error">Password must be at least 8 characters long.</span>
+                     </label>
+                 </div>
+             </div>
+             <div class="grid-x grid-padding-x">
+                 <div class="medium-6 cell">
+                     <button type="submit" class="button">Submit</button>
+                 </div>
+                 <div class="medium-6 cell">
+                     <button type="reset" class="button secondary">Reset</button>
+                 </div>
+             </div>
+         </form>
+     </div>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/what-input/dist/what-input.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+     <script>
+         $(document).foundation();
+     </script>
+ </body>
+ </html>
