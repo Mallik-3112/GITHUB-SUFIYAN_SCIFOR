@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS function</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+            line-height: 2.5rem;
+        }
+    </style>
 </head>
 <body>
     <h1>JS function to perform arithematic operation</h1>
 
     <script>
-        function calculate(a, b, Operator){
-            switch(operator) {
-                case 'add':
+        function calculate(a, b, operator){
+            switch (operator) {
+                case '+':
                     return a + b;
-                case 'sub':
+                case '-':
                     return a - b;
-                case 'multiply':
+                case '*':
                     return a * b;
-                case 'divide':
-                    if(b !== 0) {
-                        alert("Error: Division by zero is not allowed.");
+                case '/':
+                    if(b === 0) {
+                        return "Error: Division by zero is not allowed.";
                     }
+                    return a / b;
                 default:
-                    alert("Error: Invalid operator.");
-                    return;
+                    return "Error: Invalid operator.";
             }
         }
-        document.write(calculate(5, 4, '+'));
-        document.write(calculate(5, 4, '-'));
-        document.write(calculate(5, 4, '*'));
-        document.write(calculate(5, 4, '/'));
+        document.write('a + b = ',calculate(5, 4, '+'),"<br>");
+        document.write('a - b = ',calculate(5, 4, '-'),"<br>");
+        document.write('a * b = ',calculate(5, 4, '*'),"<br>");
+        document.write('a / b = ',calculate(5, 4, '/'),"<br>");
     </script>
 </body>
 </html>
