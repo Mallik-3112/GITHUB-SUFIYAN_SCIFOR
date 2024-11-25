@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>SUFIYAN M.</h1>
+        <ul id="nav-list">
+            <li><a href="#container-1">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#myprojects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" id="menu" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div id="container-1">
+        <header>
+        <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1>Hello, Welome to my Portfolio. <br> I am <span>Sufiyan Malik</span> from India.</h1>
+        </div>
+        </header>
+    </div>
+
+    <!-- About me section -->
+    <div id="aboutme">
+        <div class="container">
+            <div class="about-row">
+                <div class="col-1">
+                    <img src="portfolio.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h1>About Me</h1>
+                    <p>I am Sufiyan Malik from Mumbai, India. I have completed my bachelors degree in 2019 from Vivek College in Mumbai.
+                        I have been learning front-end development since past 1 year and have made
+                        various mini projects & cloned websites using HTML, CSS, Javascript and i am 
+                        currently learning more new tools & technology and sharpening my skill to become an expert
+                        in my field currently have enrolled for the remote internship and training programme from Meta Scifor technology ltd.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Creating structure of webpage.</li>
+                            <li><span>CSS</span><br>Styling the HTML element using font, color, size.</li>
+                            <li><span>Javascript</span><br>Add interactive & dynamic behaviour to webpage.</li>
+                            <li><span>Bootstrap</span><br>Simplifying web design by providing pre-styled components and a responsive grid system.</li>
+                            <li><span>React</span><br>Building user interfaces, particularly single-page applications.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Currently</span><br>Persuing 6 Month Internship & training from Meta Scifor technology pvt ltd since Sep 2024.</li>
+                            <li><span>Aug 20204</span><br>1 Month Internship at Unified Mentor as a fornt-end developer.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation</span><br>Completed by Bachlors in commerce from vivek college of commerce, Mumbai.</li>
+                            <li><span>HSC</span><br>Completed by 12th in Commerce from Vivek college of commerce, Mumbai.</li>
+                            <li><span>SSC</span><br>Completed my 10th from MTS Khalse high school, Mumbai.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project section -->
+    <div id="myprojects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project-item">
+                    <h2>Cloned website</h2>
+                    <p>Designed cloned website of amazon.com using HTML and css</p>
+                    <a target="_blank" href="cloned website/Amazonindia.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Game</h2>
+                    <p>Designed Tic-tac-toe game using HTML, CSS, Javascript</p>
+                    <a target="_blank" href="Game/Tic-tac-toe.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Currency Converter</h2>
+                    <p>Designed currency converter using HTML, CSS, Javascript and included API to get update about latest exchange rate.</p>
+                    <a target="_blank" href="currency converter/CurrencyConv.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Weather App</h2>
+                    <p>Designed weather app using HTML, CSS, Javascript and included API to get latest weather update.</p>
+                    <a target="_blank" href="Weather App/weather.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Online Shoe Store</h2>
+                    <p>Designed online shoes store using HTML and CSS.</p>
+                    <a target="_blank" href="https://shoe-store-3f686.web.app/">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Image Search Engine</h2>
+                    <p>Designed image search engine using API to get searched text images.</p>
+                    <a target="_blank" href="Image Search/SearchImage.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Text-to-speech converter</h2>
+                    <p>Designed a text to speech converter app the convert the input text into speech of different voices.</p>
+                    <a target="_blank" href="text-to-speech/Text-to-speech.html">Project link</a>
+                </div>
+                <div class="project-item">
+                    <h2>Calculator</h2>
+                    <p>Designed a calculator using HTML, CSS, Javascript.</p>
+                    <a target="_blank" href="calculator/Calculator.html">Project link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>malliksufiyan5@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7738933853</p>
+                    <div class="social-icon">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100007921577135"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/mallik_100/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sufiyan-malik-9002b8213/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a target="_blank" download href="Frontend developer resume.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" row="6" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <a href="" id="back-to-top"><i class="fa-solid fa-angle-up"></i></a>
+
+
+    <!-- Footer section -->
+    <div class="copyright">
+        <p>Copyright © 2024 All rights reserved. Made by Sufiyan Malik</p>
+    </div>
+
+
+    <!-- Javascript code -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("nav-list");
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxKYWfcHoEF-r1hO52zbLPjmTLajqZycSGHPy3NjbIago8S2g4JU7lvIVTAxGpjU2vH/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submitted";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
