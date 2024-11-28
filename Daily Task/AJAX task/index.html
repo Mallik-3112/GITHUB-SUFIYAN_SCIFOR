@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX task</title>
+</head>
+<body>
+    <h1>Triggering a AJAX call to about page</h1>
+    <button id="fetchBtn">Fetch Data</button>
+    <button id="backupBtn">Backup Data</button>
+
+    <script>
+        let fetchBtn = document.getElementById("fetchBtn");
+        fetchBtn.addEventListener('click', buttonClicked);
+
+        function buttonClicked(){
+            document.write('<strong>You have clicked the button.</strong> <br>');
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'about.html', true);
+            xhr.onload = function(){
+                document.write(this.responseText);
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
