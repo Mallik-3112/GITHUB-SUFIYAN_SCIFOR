@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-8</title>
+</head>
+<body>
+    <h1>Operation with array function</h1>
+
+    <script>
+
+        function reverseAndSortArray(arr){
+            let reverse = arr.reverse();
+            console.log(`Reversed array = ${reverse}`);
+
+            let sort = arr.sort();
+            console.log(`Sort array = ${sort}`);
+            return sort;
+        }
+        let input = (['s', 'u', 'f', 'i', 'y', 'a', 'n']);
+        let result = reverseAndSortArray(input);
+    </script>
+</body>
+</html>
