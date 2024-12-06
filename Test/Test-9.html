@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #result{
+            text-align: center;
+            font-size: larger;
+            padding: 20px;
+            border: 2px solid red;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetch API</h1>
+    <button id="btn" onclick="getResult()">Search</button>
+    <p id="result"></p>
+
+
+    <script>
+        let URL = 'https://cat-fact.herokuapp.com/facts';
+        let result = document.getElementById('result');
+        let btn = document.getElementById('btn');
+
+        const getResult = async()=>{
+            let response = await fetch(URL);
+            let data = await response.json()
+            result.innerHTML = data[2].text;
+        };
+        btn.addEventListener('click', getResult)
+    </script>
+</body>
+</html>
