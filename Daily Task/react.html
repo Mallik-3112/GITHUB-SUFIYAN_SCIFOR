@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <div id="root"></div>
+    <script type="text/babel">
+    
+ function Display() {
+  const app = () => {
+    let heading = document.createElement('h1')
+    heading.innerHTML = 'This is Heading'
+    let para = document.createElement('para')
+    para.innerHTML = 'This is a Paragraph'
+    document.getElementById('div').appendChild(heading)
+    document.getElementById('div').appendChild(para)
+  }
+  return (
+    <div id="div">
+        <button onClick={app}>hello guys!</button>
+    </div>
+  );
+}
+
+        ReactDOM.render(<Display />, document.getElementById('root'));
+    </script>
+</body>
+</html>
