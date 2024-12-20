@@ -10,59 +10,66 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React Function Component</title>
-    
-    <!-- React and ReactDOM CDN -->
+
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+      }
+    </style>
+</head>
+<body>
+  <!-- React and ReactDOM CDN -->
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <!-- Babel CDN for JSX support -->
   <script src="https://unpkg.com/@babel/standalone@7.21.4/babel.min.js"></script>
-</head>
-<body>
-    
 
   <div id="root"></div>
+
   <script type="text/babel">
-    function userDetails(props) {
-        return(
-            <div className='container'>
-                <h2>User Details</h2>
-                <p><strong>Name:</strong> {props.name}</p>
-                <p><strong>Age:</strong> {props.age}</p>
-                <p><strong>Email:</strong> {props.email}</p>
-                <p><strong>Mobile No:</strong> {props.mobileNo}</p>
-                <p><strong>City:</strong> {props.city}</p>
-            </div>
-        )
+    // UserDetails Functional Component
+    function UserDetails(props) {
+      return (
+        <div className="container">
+          <h2>User Details</h2>
+          <p><strong>Name:</strong> {props.name}</p>
+          <p><strong>Age:</strong> {props.age}</p>
+          <p><strong>Email:</strong> {props.email}</p>
+          <p><strong>Mobile No:</strong> {props.mobileNo}</p>
+          <p><strong>City:</strong> {props.city}</p>
+        </div>
+      );
     }
 
-    function App(){
-        const user={
-            name: 'Sufiyan',
-            age: 60,
-            email: 'abc@gmail.com',
-            mobileNo: 9999999999,
-            city: 'Jaipur'
-        }
-        return(
-            <div>
-                <userDetails
-                name={user.name}
-                age={user.age}
-                email={user.email}
-                mobile no={user.mobileNo}
-                city={user.city}
-                />
-            </div>
-        )
-    }
-        
+    // App Component to Render UserDetails
+    function App() {
+      const user = {
+        name: "Sufiyan",
+        age: 60,
+        email: "malik@gmail.com",
+        mobileNo: "123-456-789",
+        city: "Delhi"
+      };
 
+      return (
+        <div>
+          <UserDetails
+            name={user.name}
+            age={user.age}
+            email={user.email}
+            mobileNo={user.mobileNo}
+            city={user.city}
+          />
+        </div>
+      );
+    }
+
+    // Rendering App Component
     ReactDOM.render(<App />, document.getElementById('root'));
   </script>
 </body>
