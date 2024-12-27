@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change State Object</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      background-color: antiquewhite;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+    .state-container {
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Change State Object Properties</h1>
+  <div class="state-container">
+    <p><strong>Name:</strong> <span id="name">Sufiyan</span></p>
+    <p><strong>Last Name:</strong> <span id="lname">Malik</span></p>
+    <p><strong>Age:</strong> <span id="age">25</span></p>
+  </div>
+  <button onclick="changeProperties()">Change Properties</button>
+
+  <script>
+    function changeProperties() {
+      // Update the state properties
+      document.getElementById('name').textContent = 'Sultan';
+      document.getElementById('lname').textContent = 'Mirza';
+      document.getElementById('age').textContent = '26';
+    }
+  </script>
+</body>
+</html>
