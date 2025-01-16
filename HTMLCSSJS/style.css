@@ -44,6 +44,10 @@ header{
     text-align: center;
     align-items: center;
 }
+#nav-list li a{
+    text-decoration: none;
+    color: #555555;
+}
 #nav-list i{
     cursor: pointer;
     margin: 14px 0 0 25px;
@@ -104,7 +108,7 @@ header{
 }
 
 /* About Us */
-.about{
+#about{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -112,7 +116,7 @@ header{
     height: 285px;
     margin: 0px 90px 40px;
 }
-.about h2{
+#about h2{
     color: #555555;
     font-size: 28px;
     margin: 39px 0px 30px;
@@ -132,7 +136,7 @@ header{
     margin: 0 0 20px;
     line-height: 28px;
 }
-.about button{
+#about button{
     padding: 8px 15px;
     color: white;
     background-color: #07ABEF;
@@ -142,7 +146,7 @@ header{
 }
 
 /* Services */
-.service{
+#service{
     height: 650px;
     background-color: #e0e0e0;
     text-align: center;
@@ -205,7 +209,7 @@ header{
     color: white;
     transition: all 0.5s ease 0s;
 }
-.service h2{
+#service h2{
     font-size: 28px;
     color: #555555;
     margin: 39px 0px 30px;
@@ -259,21 +263,20 @@ header{
 }
 
 /* Solution */
-.solution{
-    height: 408px;
+#solution{
+    height: 400px;
     width: 100%;
     background-color: rgb(204, 204, 204);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 14px;
+    padding: 20px 14px;
 }
-.solution h2{
+#solution h2{
     color: #555555;
     font-size: 28px;
-    margin: 39px 0 24px;
+    margin: 39px 0px 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 .solution h2 :hover{
     color: #07ABEF;
@@ -283,7 +286,7 @@ header{
     margin: 0px 100px;
 }
 .solution-box{
-    padding: 15px;
+    padding: 0px 12px;
 }
 .solution-box h2{
     font-size: 26px;
@@ -296,47 +299,47 @@ header{
     font-size: 15px;
     color: #444444;
     text-align: center;
-    line-height: 28px;
+    line-height: 25px;
 }
 
 /* Events */
-.events{
+#events{
     height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 45px 82px 62px;
 }
-.events h2{
+#events h2{
     color: #555555;
     font-size: 28px;
     margin: 14px 0px 25px;
 }
-.events p{
+#events p{
     font-size: 15px;
     color: #444444;
     margin: 20px 0px 0px;
     line-height: 25px;
 }
-.events h4{
+#events h4{
     font-size: 20px;
     color: #555555;
     margin: 20px 0px 0px;
 }
 
 /* Testimonial */
-.testimonial{
+#testimonial{
     height: 530px;
     background-image: url(https://www.godwittech.com/wp-content/uploads/2016/10/background.jpg);
     text-align: center;
     color: white;
     padding: 40px 90px;
 }
-.testimonial h1{
+#testimonial h1{
     margin: 0px 0px 15px;
     font-size: 40px;
 }
-.testimonial p{
+#testimonial p{
     padding: 0px 0px 40px;
     font-size: 16px;
 }
@@ -358,7 +361,7 @@ header{
 }
 
 /* Info */
-.info{
+#info{
     height: 160px;
     display: flex;
     justify-content: space-evenly;
@@ -367,13 +370,13 @@ header{
     color: white;
     background-color: #07ABEF;
 }
-.info-icon{
+#info-icon{
     line-height: 34px;
 }
-.info-icon i{
+#info-icon i{
     font-size: 35px;
 }
-.info-icon p{
+#info-icon p{
     font-size: 18px;
 }
 
@@ -481,6 +484,9 @@ header{
     right: 10px;
     bottom: 52px;
 }
+.backtotop i{
+    color: white;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -491,15 +497,15 @@ header{
         gap: 5px;
         list-style-type: none;
         background-color: #07ABEF;
-        opacity: 0.7;
-        position: fixed;
+        opacity: 0.8;
+        position: absolute;
         top: 90px;
         z-index: 1;
         right: 0px;
         width: 100%;
         height: auto;
         align-items: center;
-        padding-top: 50px;
+        padding: 50px 0px;
     }
     .hamburger{
         background-color: #07ABEFCC;
@@ -531,6 +537,9 @@ header{
         width: 80px;
         color: white;
     }
+    #nav-list li a{
+        color: white;
+    }
     #nav-list i{
         display: none;
     }
@@ -542,10 +551,6 @@ header{
         width: 100%;
         height: 10rem;
     }
-    /* .hero-swipe{
-        position: absolute;
-        top: 10em;
-    } */
     .contact{
         font-weight: lighter;
         height: 40px;
@@ -556,7 +561,7 @@ header{
         top: 400px;
     }
 
-    .about{
+    #about{
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -566,7 +571,7 @@ header{
         margin: 0px;
         width: 100%;
     }
-    .about h2{
+    #about h2{
         font-size: 25px;
         margin: 0px 0px 20px;
     }
@@ -581,7 +586,7 @@ header{
         margin: 0px 0px 20px;
     }
     
-    .service{
+    #service{
         height: 1700px;
         padding: 40px 0px 52px;
         display: flex;
@@ -612,7 +617,7 @@ header{
     .icons i{
         font-size: 26px;
     }
-    .service h2{
+    #service h2{
         font-size: 25px;
         margin: 0px 0px 20px;
     }
@@ -648,8 +653,8 @@ header{
         margin-top: 18px;
     }
     
-    .solution{
-        height: 912px;
+    #solution{
+        height: 1017px;
         background-color: #cccccc;
         display: flex;
         flex-direction: column;
@@ -659,10 +664,10 @@ header{
     .solution-list{
         display: flex;
         flex-direction: column;
-        margin: 30px 10px;
+        margin: 20px 10px;
     }
     .solution-box{
-        padding: 20px 0px;
+        padding: 12px 0px;
     }
     .solution-box h2{
         font-size: 22px;
@@ -673,40 +678,40 @@ header{
         font-size: 15px;
         color: #444444;
         text-align: center;
-        line-height: 28px;
+        line-height: 25px;
     }
     
     /* Events */
-    .events{
+    #events{
         height: 550px;
         padding: 40px 10px 32px;
     }
-    .events h2{
+    #events h2{
         color: #555555;
         font-size: 25px;
         margin: 0px 0px 30px;
     }
-    .events p{
+    #events p{
         margin: 30px 0px 20px;
         line-height: 28px;
         text-align: center;
     }
-    .events h4{
+    #events h4{
         text-align: center;
         font-size: 18px;
         margin: 0px 0px 15px;
     }
     
     /* Testimonial */
-    .testimonial{
+    #testimonial{
         height: 490px;
         padding: 40px 10px 56px;
     }
-    .testimonial h1{
+    #testimonial h1{
         margin: 0px 0px 15px;
         font-size: 25px;
     }
-    .testimonial p{
+    #testimonial p{
         font-size: 16px;
         padding: 20px 0px 30px;
     }
@@ -723,26 +728,26 @@ header{
     }
 
     /* Info */
-.info{
+#info{
     height: 319px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.info-icon{
+#info-icon{
     line-height: 30px;
     padding: 18px 0px;
 }
-.info-icon i{
+#info-icon i{
     font-size: 32px;
 }
-.info-icon p{
+#info-icon p{
     font-size: 15px;
 }
 
 /* Top-Footer */
 .top-footer{
-    height: 1530px;
+    height: 1560px;
     padding: 52px 10px 0px;
     display: flex;
     flex-direction: column;
@@ -763,7 +768,7 @@ header{
 }
 
 .map{
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
 }
 
 
