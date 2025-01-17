@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Named formatstring</title>
 </head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+    }
+</style>
 <body>
     <h1>NAMED FORMATSTRING</h1>
 
     <script>
-        function namedFormatString(input) {
-            const lowerCase = input.toLowerCase();
+        function namedFormatString(string) {
 
-            const subString = lowerCase.substring(0, 2);
+        const uppercaseString = string.toUpperCase();
 
-            const upperCase = subString.toUpperCase();
+        const lowercaseString = string.toLowerCase();
 
-            return upperCase;
-}
-        const result = namedFormatString("SufiyanMalik");
-        console.log(result);
+        const substring = string.substring(2, 5);
+
+        return {
+            uppercase: uppercaseString,
+            lowercase: lowercaseString,
+            substring: substring
+        };
+    }
+
+        const inputStr = "Sufiyan Malik";
+        const result = namedFormatString(inputStr);
+        document.write("Uppercase: ", result.uppercase + "<br>");
+        document.write("Lowercase: ", result.lowercase + "<br>");
+        document.write("Substring (index 2 to 5): ", result.substring + "<br>");
     </script>
 </body>
 </html>
