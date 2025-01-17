@@ -166,7 +166,7 @@ header{
     border-radius: 50%;
     position: absolute;
     left: 13rem;
-    top: 66rem;
+    top: 67rem;
 }
 .eyes{
     height: 86px;
@@ -178,7 +178,7 @@ header{
     border-radius: 50%;
     position: absolute;
     left: 31rem;
-    top: 66rem;
+    top: 67rem;
 }
 .list{
     height: 86px;
@@ -190,7 +190,7 @@ header{
     border-radius: 50%;
     position: absolute;
     left: 49rem;
-    top: 66rem;
+    top: 67rem;
 }
 .trophy{
     height: 86px;
@@ -202,7 +202,7 @@ header{
     border-radius: 50%;
     position: absolute;
     left: 66rem;
-    top: 66rem;
+    top: 67rem;
 }
 .icons i{
     font-size: 30px;
@@ -452,10 +452,13 @@ header{
     color: white;
     height: 50px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border-top: 2px solid #07ABEF;
     padding: 0px 90px;
+}
+.bottom-footer p{
+    margin-bottom: 0px;
 }
 .bottom-footer p a{
     text-decoration: none;
@@ -789,8 +792,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 30px;
     border-top: 2px solid #07ABEF;
-    line-height: 30px;
+    line-height: 26px;
 }
 
 .social-icon i{
