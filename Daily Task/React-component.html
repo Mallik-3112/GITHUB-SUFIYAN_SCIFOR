@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Component</title>
+    <!-- Include React and ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- React will render here -->
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Define the first component
+        class B extends React.Component {
+          render() {
+            return (
+              <div>
+                <h3>First component: {this.props.data}</h3>
+              </div>
+            );
+          }
+        }
+      
+        // Define the second component
+        class A extends React.Component {
+          render() {
+            const name = "Sufiyan";
+            const lname = "Mumbai";
+            const age = 25;
+      
+            return (
+              <div>
+                <h1>Hello</h1>
+                {/* Pass concatenated data as a prop to component B */}
+                <B data={`${name} ${lname} ${age}`} />
+              </div>
+            );
+          }
+        }
+      
+        // Render the A component
+        ReactDOM.render(<A />, document.getElementById("root"));
+    </script>
+</body>
+</html>
