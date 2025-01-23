@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array operation</title>
+</head>
+<body>
+    <h1>Operation with Array</h1>
+    <h3>Original Array =  ['force ', 'eicher ', 'ashoka ']</h3>
+    <h3 id="output"></h3>
+
+    <script>
+        function namedManipulateArray(arr){
+            let newString = arr.push('VOLVO');
+
+            for(let i=0; i<arr.length; i++){
+                arr[i] = arr[i].toUpperCase();
+            }
+            
+            return arr;
+        }
+        const inputArr = ['force ', 'eicher ', 'ashoka ']
+        const result = namedManipulateArray(inputArr)
+        document.getElementById("output").innerText = result;
+    </script>
+</body>
+</html>
