@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use Effect Hook</title>
-    <Style>
-        body{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: larger;
-        }
-    </Style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #counter {
+      font-size: 2rem;
+      margin: 20px;
+    }
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script> 
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
-    <div id="root"></div>
-    
-    <script type="text/babel">
-        const{ useState, useEffect} = React;
+  <h1>Counter</h1>
+  <div id="counter">0</div>
+  <button id="increment">Increment</button>
+  <button id="decrement">Decrement</button>
 
-        function Counter(){
-            const[count, setCount] = useState(0);
+  <script>
+    const counter = document.getElementById('counter');
+    const increment = document.getElementById('increment');
+    const decrement = document.getElementById('decrement');
 
-            useEffect(()=>{}, [count]);
+    let count = 0;
 
-            return(
-                <div className="container">
-                    <h1>Count using useEffect</h1>
-                    <p className='count'>Count: {count}</p>
-                    <button onClick={()=> setCount(count+1)} className='btn'>Increment</button>
-                    <button onClick={()=> setCount(count-1)} className='btn'>Decrement</button>
-                </div>
-            )
-        }
-        const root = ReactDOM.createRoot(document.getElementById('root'))
-        root.render(<Counter />)
-    </script>
+    incrementBtn.addEventListener('click', () => {
+      count++;
+      counter.textContent = count;
+    });
+
+    decrementBtn.addEventListener('click', () => {
+      count--;
+      counter.textContent = count;
+    });
+  </script>
 </body>
 </html>
