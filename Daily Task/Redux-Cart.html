@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.2/redux.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    #product{
+        border: 1px solid gray;
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    button{
+        padding: 7px;
+        
+    }
+</style>
+<body>
+    <h1>Shopping cart using redux</h1>
+    <div id="product">
+        <img src="https://m.media-amazon.com/images/I/71UZLYpHA9L._AC_UL320_.jpg" alt="">
+        <h2>Campus Men's North Running Shoes</h2>
+        <p>Price: ₹500.00</p>
+        <button id="addToCart">Add to Cart</button>
+        <button id="removeFromCart">Remove</button>
+    </div>
+        <h2>Cart</h2>
+        <p>Items in cart: <span id="cartCount">0</span></p>
+        <button>Total Price: ₹<span id="totalPrice">0.00</span></button>
+
+    <script>
+        // Initial State
+        const initialState = {
+            count: 0,
+            totalPrice: 0
+        };
+
+        // Reducer
+        function cartReducer(state = initialState, action) {
+            switch (action.type) {
+                case 'ADD_TO_CART':
+                    return {
+                        count: state.count + 1,
+                        totalPrice: state.totalPrice + 500
+                    };
+                default:
+                    return state;
+            }
+            switch (action.type) {
+                case 'Remove_From_Cart':
+                    return {
+                        count: state.count - 1,
+                        totalPrice: state.totalPrice - 500
+                    };
+                default:
+                    return state;
+            }
+        }
+
+        // Create Redux Store
+        const store = Redux.createStore(cartReducer);
+
+        // Update UI
+        function render() {
+            const state = store.getState();
+            document.getElementById('cartCount').innerText = state.count;
+            document.getElementById('totalPrice').innerText = state.totalPrice.toFixed(2);
+        }
+
+        // Subscribe to store updates
+        store.subscribe(render);
+
+        // Event Listener
+        document.getElementById('addToCart').addEventListener('click', function () {
+            store.dispatch({ type: 'ADD_TO_CART' });
+        });
+        document.getElementById('removeFromCart').addEventListener('click', function () {
+            store.dispatch({ type: 'Remove_From_Cart' });
+        })
+    </script>
+</body>
+</html>
