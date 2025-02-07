@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/redux@4.1.0/dist/redux.js"></script>
+    <script src="https://unpkg.com/@babel/standalone"></script>
+    <title>To-Do App(Redux)</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          text-align: center;
+        }
+        #root {
+          max-width: 400px;
+          margin: auto;
+        }
+        ul {
+          padding: 0;
+          list-style: none;
+        }
+        li {
+          background: #f8f9fa;
+          padding: 10px;
+          margin: 5px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        form {
+          display: flex;
+          gap: 1rem;
+        }
+        button {
+          cursor: pointer;
+          padding: 5px 10px;
+          border: none;
+          border-radius: 3px;
+          background-color: red;
+        }
+        input {
+          padding: 8px;
+          width: 70%;
+          border-radius: 3px;
+          border: none;
+          background-color:gainsboro;
+        }
+      </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+            const addTodo = (text) => ({ type: "ADD_TODO", payload: text });
+            const removeTodo = (index) => ({ type: "REMOVE_TODO", payload: index });
+      
+            const todoReducer = (state = [], action) => {
+              switch (action.type) {
+                case "ADD_TODO":
+                  return [...state, action.payload];
+                case "REMOVE_TODO":
+                  return state.filter((task, i) => i !== action.payload);
+                default:
+                  return state;
+              }
+            };
+      
+            const store = Redux.createStore(todoReducer);
+      
+            const TaskInput = () => {
+              const [task, setTask] = React.useState("");
+      
+              const handleSubmit = (e) => {
+                e.preventDefault();
+                store.dispatch(addTodo(task));
+                setTask("");
+              };
+      
+              return (
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    value={task}
+                    onChange={(e) => setTask(e.target.value)}
+                    placeholder="Enter a task..."
+                  />
+                  <button type="submit">Add</button>
+                </form>
+              );
+            };
+      
+            const TaskList = () => {
+              const [tasks, setTasks] = React.useState(store.getState());
+      
+              React.useEffect(() => {
+                const unsubscribe = store.subscribe(() => {
+                  setTasks(store.getState());
+                });
+                return unsubscribe;
+              }, []);
+      
+              return (
+                <ul>
+                  {tasks.map((task, index) => (
+                    <li key={index}>
+                      {task}
+                      <button onClick={() => store.dispatch(removeTodo(index))}>
+                        X
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              );
+            };
+      
+            const App = () => (
+              <div className="container">
+                <h1>To-Do List</h1>
+                <TaskInput />
+                <TaskList />
+              </div>
+            );
+      
+        ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+    </body>
+</html>
