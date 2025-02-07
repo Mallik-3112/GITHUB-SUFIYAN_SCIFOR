@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Logout system(redux)</title>
+    <script src="https://unpkg.com/react@18.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/redux@4.1.0/dist/redux.js"></script>
+    <script src="https://unpkg.com/@babel/standalone"></script>
+    <style>
+        body {
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        .container {
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          width: 360px;
+        }
+        input {
+          width: 90%;
+          padding: 7px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          background: #066deb;
+          color: white;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+          margin-top: 10px;
+          border-radius: 5px;
+        }
+        button:hover {
+          background: skyblue;
+        }
+        .logout {
+          background: #dc3545;
+        }
+        .logout:hover {
+          background: #c82333;
+        }
+      </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const login = (email) => ({ type: "LOGIN", payload: email });
+        const logout = () => ({ type: "LOGOUT" });
+  
+        const authReducer = (
+          state = { isAuthenticated: false, email: "" },
+          action
+        ) => {
+          switch (action.type) {
+            case "LOGIN":
+              return { isAuthenticated: true, email: action.payload };
+            case "LOGOUT":
+              return { isAuthenticated: false, email: "" };
+            default:
+              return state;
+          }
+        };
+  
+        const store = Redux.createStore(authReducer);
+  
+        const LoginForm = () => {
+          const [email, setEmail] = React.useState("");
+          const [password, setPassword] = React.useState("");
+  
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            if (!email || !password) {
+              alert("Please enter email and password!");
+              return;
+            }
+            store.dispatch(login(email));
+          };
+  
+          return (
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button type="submit">Login</button>
+            </form>
+          );
+        };
+  
+        const Logout = ({ email }) => (
+          <div>
+            <h2>Welcome, {email}!</h2>
+            <button className="logout" onClick={() => store.dispatch(logout())}>
+              Logout
+            </button>
+          </div>
+        );
+  
+        const App = () => {
+          const [state, setState] = React.useState(store.getState());
+  
+          React.useEffect(() => {
+            const unsubscribe = store.subscribe(() => setState(store.getState()));
+            return unsubscribe;
+          }, []);
+  
+          return (
+            <div className="container">
+              <h1>{state.isAuthenticated ? "Dashboard" : "Login"}</h1>
+              {state.isAuthenticated ? (
+                <Logout email={state.email} />
+              ) : (
+                <LoginForm />
+              )}
+            </div>
+          );
+        };
+  
+        ReactDOM.render(<App />, document.getElementById("root"));
+      </script>
+</body>
+</html>
