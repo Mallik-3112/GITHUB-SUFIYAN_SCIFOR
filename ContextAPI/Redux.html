@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redux Example</title>
+  <!-- Include React, ReactDOM, Redux, and Babel from CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/redux@4/umd/redux.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // Redux actions
+    const increment = () => ({ type: 'INCREMENT' });
+    const decrement = () => ({ type: 'DECREMENT' });
+
+    // Redux reducer
+    const counterReducer = (state = 0, action) => {
+      switch (action.type) {
+        case 'INCREMENT':
+          return state + 1;
+        case 'DECREMENT':
+          return state - 1;
+        default:
+          return state;
+      }
+    };
+    // Redux store
+    const store = Redux.createStore(counterReducer);
+
+    // React component connected to Redux store
+    function CounterApp() {
+      const count = store.getState();
+
+      const handleIncrement = () => store.dispatch(increment());
+      const handleDecrement = () => store.dispatch(decrement());
+
+      return (
+        <div>
+          <h1>Counter App (Redux)</h1>
+          <h2>Count: {count}</h2>
+          <button onClick={handleIncrement}>Increment</button>
+          <button onClick={handleDecrement}>Decrement</button>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<CounterApp />, document.getElementById('root'));
+  </script>
+</body>
+</html>
