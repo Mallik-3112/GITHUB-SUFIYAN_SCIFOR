@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="angular" ng-controller="myController" ng-init="message= 'Welcome to Angular!'">
+        <h1>{{ message }}</h1>
+        <script>
+            var app = angular.module("angular", []);
+            app.controller("myController", function($scope) {
+            });
+        </script>
+</html>
