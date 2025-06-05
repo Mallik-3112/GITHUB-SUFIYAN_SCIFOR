@@ -1,0 +1,2323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+  background: #ffffff;
+  height: 5200px;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+.header {
+  width: 100%;
+  height: 133px;
+}
+.header-chunk {
+  background: var(--primary-color, #f6801f);
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+  overflow: hidden;
+}
+.nav-bar {
+  background: var(--neutral-color-white, #f7f7f7);
+  border-style: solid;
+  border-color: #e1e4eb;
+  border-width: 0px 0px 0.99px 0px;
+  padding: 15px 79px 15px 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 47px;
+}
+.menu-icon{
+  display: none;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 357px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.sm-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1216px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.hero-section {
+  padding: 214px 577px 214px 577px;
+  width: 100%;
+  height: 515px;
+  position: absolute;
+  left: calc(50% - -720px);
+  top: 650px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.inner-frame {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 1280px;
+  height: 535px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - -700px);
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.image {
+  border-radius: 12px;
+  width: 489px;
+  height: 363px;
+  position: absolute;
+  left: 727px;
+  top: 50%;
+  translate: 0 -50%;
+  box-shadow: 5px 7px 15.6px 0px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
+}
+.content {
+  width: 536px;
+  height: 271px;
+  position: absolute;
+  left: 64px;
+  top: 132px;
+}
+.frame-39 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 536px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.get-started-today {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h3-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h3-font-size, 56px);
+  line-height: var(--malizia-typography-header-h3-line-height, 67px);
+  font-weight: var(--malizia-typography-header-h3-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.elevate-your-brand-with-high-quality-signage-solutions-tailored-to-your-needs-contact-us-now-for-a-consultation-and-let-s-bring-your-vision-to-life {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p1-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p1-font-size, 22px);
+  line-height: var(--malizia-typography-paragraph-p1-line-height, 31px);
+  font-weight: var(--malizia-typography-paragraph-p1-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.button {
+  background: var(--primary-color, #f6801f);
+  border-radius: 32px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.get-a-quote {
+  color: var(--neutral-color-white, #f7f7f7);
+  text-align: center;
+  font-family: var(
+    --malizia-typography-buttons-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-buttons-font-size, 16px);
+  line-height: var(--malizia-typography-buttons-line-height, 19px);
+  font-weight: var(--malizia-typography-buttons-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.why-choose-us-section {
+  background: var(--neutral-color-white, #f7f7f7);
+  width: 100%;
+  height: 816px;
+  position: absolute;
+  top: 2081px;
+}
+.why-choose-us {
+  color: var(--primary-color, #f6801f);
+  text-align: center;
+  font-family: var(
+    --malizia-typography-paragraph-p2-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p2-font-size, 20px);
+  line-height: var(--malizia-typography-paragraph-p2-line-height, 22px);
+  font-weight: var(--malizia-typography-paragraph-p2-font-weight, 700);
+  position: absolute;
+  left: calc(50% - 640px);
+  top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.what-makes-us-stand-out {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h2-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h2-font-size, 70px);
+  line-height: var(--malizia-typography-header-h2-line-height, 77px);
+  font-weight: var(--malizia-typography-header-h2-font-weight, 700);
+  position: absolute;
+  left: calc(50% - 640px);
+  top: 102px;
+  width: 583px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.we-combine-smart-design-with-expert-execution-to-create-signage-that-truly-stands-out-every-detail-is-crafted-to-catch-eyes-leave-a-lasting-impression-and-elevate-your-business-presence-with-impact-precision-and-style {
+  color: var(--grey, #444746);
+  text-align: right;
+  font-family: "Manrope-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  position: absolute;
+  right: 60px;
+  top: 127px;
+  width: 675px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._6 {
+  background: #ffffff;
+  border-radius: 32px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 40px;
+  top: 344px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.frame-36 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 361px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 40%;
+}
+.icon {
+  flex-shrink: 0;
+  width: 94px;
+  height: 94px;
+  position: relative;
+}
+.innovation {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 40px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.innovation2 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h4-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h4-font-size, 36px);
+  line-height: var(--malizia-typography-header-h4-line-height, 40px);
+  font-weight: var(--malizia-typography-header-h4-font-weight, 700);
+  position: relative;
+  /* align-self: stretch; */
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  justify-content: flex-start;
+}
+.we-blend-creativity-and-technology-to-deliver-bold-standout-signage {
+  color: var(--grey, #444746);
+  text-align: justified;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.we-use-fresh-ideas-and-modern-tools-to-create-eye-catching-signs {
+  color: var(--grey, #444746);
+  text-align: justified;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+._5 {
+  background: #ffffff;
+  border-radius: 32px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 475px;
+  top: 344px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon2 {
+  flex-shrink: 0;
+  width: 1150px;
+  height: 290px;
+  position: relative;
+  bottom: 1px;
+  overflow: visible;
+}
+.innovation3 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h4-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h4-font-size, 36px);
+  line-height: var(--malizia-typography-header-h4-line-height, 40px);
+  font-weight: var(--malizia-typography-header-h4-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.quality-frame{
+  position: relative;
+  top: 110px;
+}
+._4 {
+  background: #ffffff;
+  border-radius: 32px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 910px;
+  top: 344px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.quality {
+  width: 115px;
+  height: 120px;
+  position: absolute;
+  left: -1px;
+  top: 40px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.slider {
+  background: #ffffff;
+  width: 1440px;
+  height: 289px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 2897px;
+  overflow: hidden;
+}
+.our-trusted-clients {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h2-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h2-font-size, 70px);
+  line-height: var(--malizia-typography-header-h2-line-height, 77px);
+  font-weight: var(--malizia-typography-header-h2-font-weight, 700);
+  position: absolute;
+  left: calc(50% - 641px);
+  top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.auto-slider {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 149px;
+  overflow: hidden;
+}
+.frame-01 {
+  width: 100%;
+  height: 135px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.ae-1 {
+  width: 227.17px;
+  height: 65px;
+  position: absolute;
+  left: 0px;
+  top: 25.67px;
+  object-fit: cover;
+}
+.ae-11{
+  width: 227.17px;
+  height: 65px;
+  position: absolute;
+  right: -130px;
+  top: 25.67px;
+  object-fit: cover;
+}
+.acuity-1 {
+  width: 155px;
+  height: 116.34px;
+  position: absolute;
+  left: 263.17px;
+  top: 0px;
+  object-fit: cover;
+}
+.group {
+  height: auto;
+  position: absolute;
+  left: 454.17px;
+  top: 28.14px;
+  overflow: visible;
+}
+.lhn-1 {
+  width: 153px;
+  height: 86.06px;
+  position: absolute;
+  left: 800.17px;
+  top: 15.14px;
+  object-fit: cover;
+}
+.atkins-1 {
+  width: 136.56px;
+  height: 76px;
+  position: absolute;
+  left: 989.17px;
+  top: 20.17px;
+  object-fit: cover;
+}
+.vmart-1 {
+  width: 149px;
+  height: 87.66px;
+  position: absolute;
+  left: 1161.73px;
+  top: 14.34px;
+  object-fit: cover;
+}
+.frame-2 {
+  width: 1310.73px;
+  height: 116.34px;
+  position: absolute;
+  left: 1311px;
+  top: 0px;
+}
+.group2 {
+  height: auto;
+  position: absolute;
+  left: 454.17px;
+  top: 28.14px;
+  overflow: visible;
+}
+.frame-154 {
+  background: #ffffff;
+  width: 1440px;
+  height: 1431px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 650px;
+  overflow: hidden;
+}
+.service-type {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 80px;
+  top: 48px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.image2 {
+  border-radius: 32px;
+  width: 378px;
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 212px;
+  overflow: hidden;
+}
+.image3 {
+  width: 378px;
+  height: 245.07px;
+  position: absolute;
+  left: 0px;
+  top: -32.03px;
+  object-fit: cover;
+  aspect-ratio: 378/245.07;
+}
+.high-impact-led-displays-that-captivate-and-engage-your-audience {
+  color: var(--primary-black, #0e0e0e);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p4-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p4-font-size, 16px);
+  line-height: var(--malizia-typography-paragraph-p4-line-height, 26px);
+  font-weight: var(--malizia-typography-paragraph-p4-font-weight, 500);
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 127px;
+  width: 358px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-17 {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between;
+  width: 399px;
+  position: absolute;
+  left: 20px;
+  /* top: 24px; */
+}
+.led-displays {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h5-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h5-font-size, 26px);
+  line-height: var(--malizia-typography-header-h5-line-height, 29px);
+  font-weight: var(--malizia-typography-header-h5-font-weight, 700);
+  position: absolute;
+  bottom: 170px;
+  display: flex;
+  justify-content: flex-start;
+  width: 350px;
+}
+.icon3 {
+  flex-shrink: 1;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  object-fit: contain;
+}
+.service-type2 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 80px;
+  top: 504px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.image4 {
+  background: #ffffff;
+  border-radius: 32px;
+  width: 378px;
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 212px;
+  overflow: hidden;
+}
+.led-displays2 {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h5-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h5-font-size, 26px);
+  line-height: var(--malizia-typography-header-h5-line-height, 29px);
+  font-weight: var(--malizia-typography-header-h5-font-weight, 700);
+  position: absolute;
+  width: 289px;
+  height: 64px;
+  display: flex;
+  bottom: 150px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon4 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type3 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 80px;
+  top: 960px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon5 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type4 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 48px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon6 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type5 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 504px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon7 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type6 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 960px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.led-displays3 {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h5-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h5-font-size, 26px);
+  line-height: var(--malizia-typography-header-h5-line-height, 29px);
+  font-weight: var(--malizia-typography-header-h5-font-weight, 700);
+  position: absolute;
+  bottom: 145px;
+  width: 289px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon8 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type7 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 954px;
+  top: 48px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon9 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type8 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 954px;
+  top: 504px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon10 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.service-type9 {
+  background: #f7f8fd;
+  border-radius: 48px;
+  width: 406px;
+  height: 424px;
+  position: absolute;
+  left: 954px;
+  top: 960px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.icon11 {
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  position: relative;
+  bottom: 160px;
+  left: 150px;
+  overflow: visible;
+}
+.frame-318 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 46px;
+  top: 288px;
+  overflow: hidden;
+}
+.testimonial-section {
+  background: var(--neutral-color-white, #f7f7f7);
+  width: 100%;
+  height: 885px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 3800px;
+  overflow: hidden;
+}
+.client-testimonials {
+  color: var(--primary-color, #f6801f);
+  text-align: center;
+  font-family: var(
+    --malizia-typography-paragraph-p2-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p2-font-size, 20px);
+  line-height: var(--malizia-typography-paragraph-p2-line-height, 22px);
+  font-weight: var(--malizia-typography-paragraph-p2-font-weight, 700);
+  position: absolute;
+  left: calc(50% - 640px);
+  top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trusted-by-businesses-everywhere {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h2-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h2-font-size, 70px);
+  line-height: var(--malizia-typography-header-h2-line-height, 77px);
+  font-weight: var(--malizia-typography-header-h2-font-weight, 700);
+  position: absolute;
+  left: calc(50% - 640px);
+  top: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-35 {
+  width: 122px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 817px;
+}
+.ellipse-8 {
+  background: var(--grey, #444746);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  aspect-ratio: 1;
+}
+.ellipse-9 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 34px;
+  top: 0px;
+  aspect-ratio: 1;
+}
+.ellipse-10 {
+  background: var(--grey, #444746);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 68px;
+  top: 0px;
+  aspect-ratio: 1;
+}
+.ellipse-11 {
+  background: var(--grey, #444746);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 102px;
+  top: 0px;
+  aspect-ratio: 1;
+}
+.testimonials-slider {
+  width: 95%;
+  height: 474px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 334px;
+  overflow: hidden;
+}
+.review {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 870px;
+  top: 20px;
+  box-shadow: 4px 6px 22.2px 0px rgba(255, 142, 48, 0.3);
+  overflow: hidden;
+}
+.frame-34 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 348px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.stars {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.great-quality-and-fast-service-the-signs-look-amazing-and-really-helped-our-business-stand-out-highly-recommend-malizia-for-any-signage-needs {
+  color: #444746;
+  text-align: justified;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.frame-33 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-7 {
+  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.frame-32 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 118px;
+  position: relative;
+}
+.john-doe {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: "Manrope-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.acme-solutions {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 160px;
+}
+.review2 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 2175px;
+  top: 20px;
+  box-shadow: 4px 6px 22.2px 0px rgba(255, 142, 48, 0.3);
+  overflow: hidden;
+}
+.stars2 {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.review3 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 435px;
+  top: 20px;
+  box-shadow: 4px 6px 22.2px 0px rgba(255, 142, 48, 0.3);
+  overflow: hidden;
+}
+.stars3 {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.great-quality-and-fast-service-the-signs-look-amazing-and-really-helped-our-business-stand-out-highly-recommend-malizia-for-any-signage-needs2 {
+  color: #444746;
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review4 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 1740px;
+  top: 20px;
+  box-shadow: 4px 6px 22.2px 0px rgba(255, 142, 48, 0.3);
+  overflow: hidden;
+}
+.stars4 {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.review5 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.stars5 {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.john-doe2 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: "Manrope-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.acme-solutions2 {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review6 {
+  background: #ffffff;
+  border-radius: 48px;
+  width: 411px;
+  height: 424px;
+  position: absolute;
+  left: 1305px;
+  top: 20px;
+  box-shadow: var(
+    --drop-shadow-box-shadow,
+    4px 6px 22.2px 0px rgba(255, 142, 48, 0.3)
+  );
+  overflow: hidden;
+}
+.stars6 {
+  flex-shrink: 0;
+  width: 136px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.frame-14 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 327px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.frame2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.frame-13 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 327px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.frame3 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.frame-12 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 327px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.icon12 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.frame-11 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 327px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.frame4 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.official-logo2 {
+  flex-shrink: 0;
+  width: 110px;
+  height: 54.84px;
+  position: relative;
+  overflow: visible;
+}
+.nav-bar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.nav-bar-links2 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.home2 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-bar-links3 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.nav-bar-links4 {
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--wwwmaliziasigncom-primary-orange, #f6801f);
+  border-width: 0px 0px 2px 0px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.home3 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.number {
+  background: var(--primary-color, #f6801f);
+  border-radius: 11.87px;
+  display: flex;
+  flex-direction: row;
+  gap: 9.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 200.77px;
+  height: 46.48px;
+  position: relative;
+  overflow: hidden;
+}
+._971-55-995-53392 {
+  color: var(--neutral-color-white, #f7f7f7);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-buttons-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-buttons-font-size, 16px);
+  line-height: var(--malizia-typography-buttons-line-height, 19px);
+  font-weight: var(--malizia-typography-buttons-font-weight, 700);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon15 {
+  flex-shrink: 0;
+  width: 23.74px;
+  height: 23.74px;
+  position: relative;
+  overflow: visible;
+}
+.icon16 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.schedule {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+}
+
+.mail-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.maliziasign-gmail-com2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+}
+.frame5 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame6 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.icon17 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame7 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.content2 {
+  width: 300px;
+  height: 147px;
+  position: absolute;
+  left: calc(50% - -150px);
+  top: calc(50% - -73.5px);
+  transform-origin: 0 0;
+  transform: rotate(180deg) scale(1, 1);
+}
+.services3 {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-header-h2-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-header-h2-font-size, 70px);
+  line-height: var(--malizia-typography-header-h2-line-height, 77px);
+  font-weight: var(--malizia-typography-header-h2-font-weight, 700);
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - 73.5px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-38 {
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--primary-color, #f6801f);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - -27.5px);
+}
+.home-services {
+  color: #f6801f;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-317 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1285px;
+  top: 548px;
+}
+.image-9 {
+  flex-shrink: 0;
+  width: 69.86px;
+  height: 70px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-24 {
+  width: 269.64px;
+  height: 79.46px;
+  position: absolute;
+  left: 1086px;
+  top: 620px;
+}
+.frame-23 {
+  opacity: 0;
+  width: 194.38px;
+  height: 79.46px;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+}
+.rectangle-3 {
+  width: 188.38px;
+  height: 72.25px;
+  position: absolute;
+  left: 6px;
+  top: 7.22px;
+  overflow: visible;
+}
+.frame-132 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 149.56px;
+  position: absolute;
+  left: 21.71px;
+  top: 20.66px;
+}
+.we-re-online {
+  color: #000000;
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.how-may-i-help-you-today {
+  color: #464242;
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.humbleicons-chats {
+  background: #0147dd;
+  border-radius: 84.56px;
+  border-style: solid;
+  border-color: #0147dd;
+  border-width: 2px;
+  padding: 15.22px 10.99px 15.22px 10.99px;
+  width: 67.64px;
+  height: 68.46px;
+  position: absolute;
+  left: 202px;
+  top: 3.43px;
+}
+.frame8 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 18px;
+  top: 18.57px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.vector {
+  width: 23.65%;
+  height: 16px;
+  position: absolute;
+  right: 3.91%;
+  left: 72.44%;
+  top: calc(50% - 31.66px);
+  overflow: visible;
+  aspect-ratio: 1;
+}
+/* Footer section */
+.footer-section {
+  background: var(--light-shade-background, #fff8ed);
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: -230px;
+  /* overflow: visible; */
+}
+.text {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 119px;
+  top: 605px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.quick-links {
+  width: 121px;
+  height: 339px;
+  position: absolute;
+  left: 842px;
+  top: 52px;
+}
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 85px;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+}
+.home {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about-us {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.services {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.projects {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.clients {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.blog {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.careers {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-us {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-us2 {
+  width: 302px;
+  height: 247px;
+  position: absolute;
+  left: 1058px;
+  top: 52px;
+}
+.contact-us3 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p1-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p1-font-size, 22px);
+  line-height: var(--malizia-typography-paragraph-p1-line-height, 31px);
+  font-weight: var(--malizia-typography-paragraph-p1-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email {
+  color: var(--primary-color, #f6801f);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p3-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p3-font-size, 18px);
+  line-height: var(--malizia-typography-paragraph-p3-line-height, 29px);
+  font-weight: var(--malizia-typography-paragraph-p3-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.maliziasign-gmail-com {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1054px;
+  top: 323px;
+}
+.frame-9 {
+  width: 176px;
+  height: 63px;
+  position: absolute;
+  left: 0px;
+  top: 168px;
+}
+.frame-10 {
+  width: 302px;
+  height: 89px;
+  position: absolute;
+  left: 0px;
+  top: 47px;
+}
+.address {
+  color: var(--primary-color, #f6801f);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p3-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p3-font-size, 18px);
+  line-height: var(--malizia-typography-paragraph-p3-line-height, 29px);
+  font-weight: var(--malizia-typography-paragraph-p3-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.industrial-area-13-near-national-panit-next-to-al-gurg-paints-sharjah {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  width: 302px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.quick-links2 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p1-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p1-font-size, 22px);
+  line-height: var(--malizia-typography-paragraph-p1-line-height, 27px);
+  font-weight: var(--malizia-typography-paragraph-p1-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.services-section {
+  width: 184px;
+  height: 367px;
+  position: absolute;
+  left: 563px;
+  top: 52px;
+}
+.frame-26 {
+  width: 184px;
+  height: 320px;
+  position: absolute;
+  left: 0px;
+  top: 47px;
+}
+.outdoor-signage {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.indoor-signage {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.digital-signage {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.led-displays4 {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 126px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vehicle-graphics {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vinyl-stickers {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.large-format-printing {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 252px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.custom-acrylic-branding {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 294px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.services2 {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p1-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p1-font-size, 22px);
+  line-height: var(--malizia-typography-paragraph-p1-line-height, 31px);
+  font-weight: var(--malizia-typography-paragraph-p1-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.customer-support {
+  color: var(--neutral-color, #15161a);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-paragraph-p1-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-paragraph-p1-font-size, 22px);
+  line-height: var(--malizia-typography-paragraph-p1-line-height, 31px);
+  font-weight: var(--malizia-typography-paragraph-p1-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._971-55-995-5339 {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-buttons-font-family,
+    "Manrope-Bold",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-buttons-font-size, 16px);
+  line-height: var(--malizia-typography-buttons-line-height, 19px);
+  font-weight: var(--malizia-typography-buttons-font-weight, 700);
+  position: absolute;
+  left: 0px;
+  top: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-15 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 379px;
+  position: absolute;
+  left: 80px;
+  top: 52px;
+}
+.official-logo {
+  flex-shrink: 1;
+  width: 68px;
+  height: 66px;
+  position: relative;
+  overflow: visible;
+}
+.quality-signage-isn-t-just-about-looks-it-s-about-grabbing-attention-and-getting-the-message-across-instantly {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-6 {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon13 {
+  background: var(--primary-color, #f6801f);
+  border-radius: 9px;
+  flex-shrink: 0;
+  width: 52px;
+  height: 51px;
+  position: relative;
+  overflow: hidden;
+}
+.icon14 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.frame-5 {
+  flex-shrink: 0;
+  width: 198px;
+  height: 63px;
+  position: relative;
+}
+.copyrights-section {
+  background: var(--light-shade-background, #fff8ed);
+  border-style: solid;
+  border-color: var(--grey, #444746);
+  border-width: 1px 0px 0px 0px;
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 220px;
+  overflow: visible;
+}
+.copyright-2025-malizia-all-right-reserved {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: calc(50% - 640px);
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.privacy-policy {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: calc(50% - -244px);
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.terms-of-service {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: calc(50% - -394px);
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.go-to-top {
+  color: var(--grey, #444746);
+  text-align: left;
+  font-family: var(
+    --malizia-typography-footer-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--malizia-typography-footer-font-size, 16px);
+  line-height: var(--malizia-typography-footer-line-height, 26px);
+  font-weight: var(--malizia-typography-footer-font-weight, 500);
+  position: absolute;
+  left: calc(50% - -569px);
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.see-more{
+  display: none;
+}
